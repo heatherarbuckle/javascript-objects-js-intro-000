@@ -4,12 +4,12 @@ var playlist = {
   oasis: "wonderwall"
  };
 
- function updatePlaylist(playlist, artist, song) {
-   playlist.assign({artist : song});
+ function updatePlaylist(playlist, artistName, songTitle) {
+   Object.assign({artistName : songTitle});
    return playlist;
  }
 
-function removeFromPlaylist(playlist, artist) {
-  delete playlist.artist;
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist.artistName;
   return playlist;
 }
